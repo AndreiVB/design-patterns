@@ -1,6 +1,9 @@
 # Docker credentials (root only)
 /.env
 
+#Claude
+CLAUDE.md
+
 # Symfony
 app/var/
 app/vendor/
