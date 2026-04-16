@@ -1,0 +1,8 @@
+# Docker credentials (root only)
+/.env
+
+# Symfony
+app/var/
+app/vendor/
+app/.env.local
+app/.env.*.local
