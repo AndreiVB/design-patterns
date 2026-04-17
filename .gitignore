@@ -9,3 +9,7 @@ app/var/
 app/vendor/
 app/.env.local
 app/.env.*.local
+
+# Node
+app/node_modules/
+app/.pnpm-store/

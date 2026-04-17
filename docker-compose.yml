@@ -27,6 +27,19 @@ services:
     networks:
       - symfony
 
+  node:
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+    container_name: symfony_node
+    working_dir: /var/www/html
+    volumes:
+      - ./app:/var/www/html
+    networks:
+      - symfony
+    tty: true
+    command: tail -f /dev/null
+
   postgres:
     image: postgres:16-alpine
     container_name: symfony_postgres
